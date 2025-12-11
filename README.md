@@ -2,6 +2,9 @@
 
 A small immediate-mode UI demo built on openFrameworks. This project demonstrates a tiny, portable UI layer (`ui::UIManager`) that manages simple interactive controls (buttons, polygons) with rotation-aware rendering and hit-testing.
 
+## Why
+I often find myself in a situation where I need a few simple UI controls (buttons, toggles) for debugging, prototyping, or small tools. Full-featured UI libraries can be overkill and add complexity. This immediate-mode UI manager provides a lightweight solution that is easy to integrate and customize. It provides basic functionality like hit-testing, hover states, and action callbacks, while being flexible enough to extend.
+
 **Contents**
 - `src/ui/UIManager.h` / `src/ui/UIManager.cpp` — the reusable UI manager and `Button` type.
 - `src/ofApp.*` — example integration showing how to add buttons and wire actions.
