@@ -1,0 +1,5 @@
+obj
+build
+browse.db*
+*.app
+.DS_Store
