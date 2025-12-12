@@ -202,4 +202,13 @@ glm::vec2 UIManager::worldToLocalCentered(float x, float y, const Button &button
     return glm::vec2(p.x * c - p.y * s, p.x * s + p.y * c);
 }
 
+bool UIManager::getHoveredState(int x, int y) const {
+    for (const auto &button : buttons) {
+        if (button.hovered) {
+            return true;
+        }
+    }
+    return false;
+}
+
 } // namespace ui

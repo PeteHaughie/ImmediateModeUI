@@ -58,6 +58,8 @@ public:
 
     void clear();
 
+	bool getHoveredState(int x, int y) const;
+
 private:
     std::vector<Button> buttons;
     std::unordered_map<std::string, std::function<void()>> registry;
